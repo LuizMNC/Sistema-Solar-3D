@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar 3D - Física UFPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <div id="author-signature">
+        Projeto desenvolvido por: <strong>Luiz Miguel N. Cardoso</strong><br>
+        Física UFPA - Campus Abaetetuba
+    </div>
+
+    <div class="controls">
+        <button id="btn-pause">Pausar/Continuar</button>
+        <button id="btn-view">Visão Topo</button>
+        <button id="btn-reset">Visão Geral (Sol)</button>
+        <button id="btn-physics" class="highlight-btn">🌌 Curiosidades da Física</button>
+    </div>
+
+    <aside id="info-panel">
+        <button id="close-panel">X</button>
+        <h2 id="planet-name">Astro</h2>
+        <p><strong>Classificação:</strong> <span id="planet-type"></span></p>
+        <p><strong>Distância do Centro:</strong> <span id="planet-dist"></span></p>
+        <p><strong>Diâmetro:</strong> <span id="planet-size"></span></p>
+        <p><strong>Luas/Satélites:</strong> <span id="planet-moons"></span></p>
+        <p><strong>Atmosfera:</strong> <span id="planet-atm"></span></p>
+        <p><strong>Temperatura:</strong> <span id="planet-temp"></span></p>
+        <div class="curiosity">
+            <strong>Curiosidade Astronômica:</strong><br>
+            <span id="planet-fact"></span>
+        </div>
+    </aside>
+
+    <div id="physics-modal" class="hidden">
+        <div class="modal-content">
+            <button id="close-physics">X</button>
+            <h2>Explorando o Espaço: Física na Prática</h2>
+            
+            <div class="topic">
+                <h3>Velocidade da Luz e o Tempo no Espaço</h3>
+                <p>A luz viaja no vácuo a uma velocidade constante de aproximadamente <strong>300.000 km/s</strong> (ou 3 × 10⁸ m/s). Como a Terra está a cerca de 149,6 milhões de quilômetros do Sol, a luz leva cerca de <strong>8 minutos e 20 segundos</strong> para chegar até nós. Isso significa que, ao olhar para o Sol, você está vendo como ele era há 8 minutos no passado!</p>
+            </div>
+
+            <div class="topic">
+                <h3>O Movimento Uniforme das Órbitas</h3>
+                <p>Os planetas não caem no Sol porque possuem uma velocidade tangencial imensa. A força gravitacional do Sol atua como uma força centrípeta, mudando constantemente a direção dessa velocidade geométrica, o que resulta em uma órbita quase circular contínua.</p>
+            </div>
+
+            <div class="topic">
+                <h3>Galáxias e a Expansão do Universo</h3>
+                <p>O Sistema Solar faz parte da Via Láctea, uma galáxia espiral que contém entre 100 e 400 bilhões de estrelas. O universo como um todo está em expansão acelerada. Quanto mais distante uma galáxia está de nós, mais rápido ela parece se afastar, um fenômeno descrito pela Lei de Hubble.</p>
+            </div>
+            
+            <div class="topic">
+                <h3>A Estação Espacial Internacional (ISS)</h3>
+                <p>A ISS orbita a Terra a cerca de 400 km de altitude a uma velocidade de 28.000 km/h. Seus astronautas experimentam a "microgravidade" não porque não há gravidade lá em cima (a gravidade terrestre ainda é cerca de 90% da superfície), mas porque a estação está em constante queda livre ao redor da Terra.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

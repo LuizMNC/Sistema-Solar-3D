@@ -14,24 +14,30 @@
         Física UFPA - Campus Abaetetuba
     </div>
 
-    <div class="controls">
-        <button id="btn-pause">Pausar / Continuar</button>
-        <button id="btn-view">Visão Topo</button>
+    <div class="controls top-controls">
+        <button id="btn-view">Visão de Topo</button>
         <button id="btn-reset">Visão Geral (Sol)</button>
-        <button id="btn-physics" class="highlight-btn">🌌 Curiosidades da Física</button>
+        <button id="btn-physics" class="highlight-btn">🌌 Física do Espaço</button>
+    </div>
+
+    <div class="controls bottom-controls">
+        <div class="control-group">
+            <button id="btn-toggle-planets" class="active">Planetas: ON</button>
+            <button id="btn-toggle-moons" class="active">Luas: ON</button>
+            <button id="btn-toggle-iss" class="active">ISS: ON</button>
+        </div>
     </div>
 
     <aside id="info-panel">
         <button id="close-panel">X</button>
         <h2 id="planet-name">Astro</h2>
         <p><strong>Classificação:</strong> <span id="planet-type"></span></p>
-        <p><strong>Distância do Centro:</strong> <span id="planet-dist"></span></p>
+        <p><strong>Distância:</strong> <span id="planet-dist"></span></p>
         <p><strong>Diâmetro:</strong> <span id="planet-size"></span></p>
-        <p><strong>Luas/Satélites:</strong> <span id="planet-moons"></span></p>
-        <p><strong>Atmosfera:</strong> <span id="planet-atm"></span></p>
+        <p><strong>Características:</strong> <span id="planet-atm"></span></p>
         <p><strong>Temperatura:</strong> <span id="planet-temp"></span></p>
         <div class="curiosity">
-            <strong>Curiosidade Astronômica:</strong><br>
+            <strong>Fato Curioso:</strong><br>
             <span id="planet-fact"></span>
         </div>
     </aside>
@@ -42,18 +48,18 @@
             <h2>Explorando o Espaço: Física na Prática</h2>
             
             <div class="topic">
-                <h3>Velocidade da Luz e o Tempo no Espaço</h3>
-                <p>A luz viaja no vácuo a uma velocidade constante de aproximadamente <strong>300.000 km/s</strong>. Como a Terra está a cerca de 149,6 milhões de quilômetros do Sol, a luz leva cerca de <strong>8 minutos e 20 segundos</strong> para chegar até nós. Isso significa que, ao olhar para o Sol, você está vendo como ele era no passado!</p>
+                <h3>Velocidade da Luz e o Tempo</h3>
+                <p>A luz viaja no vácuo a aproximadamente <strong>300.000 km/s</strong>. Como a Terra está a cerca de 149,6 milhões de quilômetros do Sol, a luz leva cerca de <strong>8 minutos e 20 segundos</strong> para chegar até nós.</p>
             </div>
 
             <div class="topic">
                 <h3>O Movimento Uniforme das Órbitas</h3>
-                <p>Os planetas não caem no Sol porque possuem uma velocidade tangencial imensa. A força gravitacional atua como força centrípeta, mudando a direção da velocidade, resultando em uma órbita elíptica/circular contínua.</p>
+                <p>A translação dos corpos celestes é um ótimo exemplo para estudar movimento circular. A força gravitacional do corpo central atua como força centrípeta, mudando constantemente a direção da velocidade tangencial do satélite e mantendo sua órbita contínua.</p>
             </div>
 
             <div class="topic">
                 <h3>A Estação Espacial Internacional (ISS)</h3>
-                <p>A ISS orbita a Terra a cerca de 400 km de altitude a uma velocidade de 28.000 km/h. Seus astronautas experimentam a "microgravidade" porque a estação está em constante estado de queda livre ao redor da Terra.</p>
+                <p>A ISS orbita a Terra a cerca de 400 km de altitude a impressionantes 28.000 km/h. Os astronautas flutuam porque a estação está em constante estado de queda livre (microgravidade), e não por ausência de gravidade gravitacional terrestre.</p>
             </div>
         </div>
     </div>
